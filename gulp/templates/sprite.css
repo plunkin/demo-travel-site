@@ -1,0 +1,15 @@
+/* Do not edit _sprite.css directle as it is auto generated. Change or make edits to the sprite.css file in the templates directory */
+
+{{#shapes}}
+   {{#first}}
+      .icon {
+          background-image: url('/assets/images/sprites/{{{sprite}}}');
+      }
+   {{/first}}
+      
+   .icon--{{base}} {
+   	 width: {{width.outer}}px;
+   	 height: {{height.outer}}px;
+   	 background-position: {{position.relative.xy}};
+   }
+{{/shapes}}
